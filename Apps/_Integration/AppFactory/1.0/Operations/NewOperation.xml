@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getVersion" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="NewOperation" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
     <service-config>
         <config-param api-version="" appid="" name="preprocessorname" value=""/>
         <config-param api-version="" appid="" name="postprocessorname" value=""/>
@@ -8,7 +8,7 @@
         <config-param api-version="" appid="" name="preprocessorRules" value=""/>
         <config-param api-version="" appid="" name="postprocessorRules" value=""/>
         <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
-        <config-param api-version="" appid="" name="endpointUrl" value="https://run.mocky.io/v3/c2cf4359-2771-41c9-8ade-6c0dda5fe5a1"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://run.mocky.io/v3/b537013d-44f5-4791-8bb5-0a4ebb3196ae"/>
         <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
         <config-param api-version="" appid="" name="http.method" value="GET"/>
         <config-param api-version="" appid="" name="dataObjectName" value=""/>
@@ -16,16 +16,14 @@
         <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
         <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
         <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
     </service-config>
     <service-input passthrough="false" isExtended="false">
         <header datatype="" name="" passthrough="false" isExtended="false"/>
         <stub-param value=""/>
     </service-input>
     <service-output passthrough="false" isExtended="false">
-        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="environment" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="environment" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
-            <accessType></accessType>
-        </param>
-        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="version" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="version" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="AppFactoryVersion" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="AppFactoryVersion" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
             <accessType></accessType>
         </param>
     </service-output>

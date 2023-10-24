@@ -1,0 +1,8 @@
+{
+  "AddressLine1": ${TPStreetAddressLine1},
+  "AddressLine2": ${TPStreetAddressLine2},
+  "Suburb": ${TPStreetAddressSuburb},
+  "City": ${TPStreetAddressCity},
+  "PostalCode": ${TPStreetAddressPostalCode},
+  "Province": ${TPStreetAddressProvince}
+}

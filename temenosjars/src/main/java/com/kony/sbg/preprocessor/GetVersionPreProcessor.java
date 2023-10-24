@@ -8,7 +8,7 @@ import com.konylabs.middleware.dataobject.Result;
 public class GetVersionPreProcessor implements DataPostProcessor2 {
     @Override
     public Object execute(Result result, DataControllerRequest dataControllerRequest, DataControllerResponse dataControllerResponse) throws Exception {
-        result.addStringParam("appfactorytest-1.0.0.jar", "v1");
+        result.addStringParam("appfactorytest-1.0.0.jar", "v2");
         return result;
     }
 }

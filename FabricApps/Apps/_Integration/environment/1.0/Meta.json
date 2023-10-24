@@ -1,7 +1,7 @@
 {
   "serviceType" : "integration",
   "jars" : [ {
-    "name" : "appfactorytest-1.0.0.jar",
+    "name" : "appfactorytest.jar",
     "type" : "jar"
   } ]
 }

@@ -1,0 +1,24 @@
+
+
+ALTER TABLE dbxdb.interbankfundtransfers
+ADD UNIQUE (confirmationNumber);
+
+ALTER TABLE dbxdb.interbankfundtransfersRefData
+ADD UNIQUE (confirmationNumber);
+
+ALTER TABLE dbxdb.ownaccounttransfers
+ADD UNIQUE (confirmationNumber);
+
+ALTER TABLE dbxdb.ownaccounttransfersRefData
+ADD UNIQUE (confirmationNumber);
+
+ALTER TABLE dbxdb.internationalfundtransfersRefData
+ADD UNIQUE (confirmationNumber);
+
+ALTER TABLE dbxdb.internationalfundtransfers
+ADD UNIQUE (confirmationNumber);
+
+----------------------------------------------------------------------------------------------------------
+
+ALTER TABLE dbxdb.transaction
+ADD UNIQUE (confirmationNumber);

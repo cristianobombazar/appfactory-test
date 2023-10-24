@@ -1,0 +1,35 @@
+Adding four new EventtypeId(two  for Approvers and two for creator) for Make transfer Eventtype
+===================================================================================================================
+INSERT INTO dbxdb.eventsubtype
+(id, eventtypeid, Name, Description, createdby, modifiedby, createdts, lastmodifiedts, synctimestamp, softdeleteflag, externalSystem)
+VALUES('SBG_PAYMENTFEEDBACK_SUCESSS_APPROVER', 'MAKE_TRANSFER', 'Payment Processing Sucessfully for approver', 'Payment Processing sucessfully for approver', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0, 0);
+
+==================================================================================================================
+
+INSERT INTO dbxdb.eventsubtype
+(id, eventtypeid, Name, Description, createdby, modifiedby, createdts, lastmodifiedts, synctimestamp, softdeleteflag, externalSystem)
+VALUES('SBG_PAYMENTFEEDBACK_SUCESSS_INITIATOR', 'MAKE_TRANSFER', 'Payment Processing Sucessfully for initiator', 'Payment Processing sucessfully for initiator', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0, 0)
+
+===================================================================================================================
+
+INSERT INTO dbxdb.eventsubtype
+(id, eventtypeid, Name, Description, createdby, modifiedby, createdts, lastmodifiedts, synctimestamp, softdeleteflag, externalSystem)
+VALUES('SBG_PAYMENTFEEDBACK_FAILED_APPROVER', 'MAKE_TRANSFER', 'Payment Processing failed approver', 'Payment Processing failed approver', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0, 0);
+
+===================================================================================================================
+INSERT INTO dbxdb.eventsubtype
+(id, eventtypeid, Name, Description, createdby, modifiedby, createdts, lastmodifiedts, synctimestamp, softdeleteflag, externalSystem)
+VALUES('SBG_PAYMENTFEEDBACK_FAILED_INITIATOR', 'MAKE_TRANSFER', 'Payment Processing failed initiator', 'Payment Processing failed initiator', '', '', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0, 0);
+===================================================================================================================
+
+After Adding new eventtypeid Restart QueueMaster in Fabric
+Before Restarting QueueMaster we have to change QUEUEMASTER_MAINTENANCE_MODE to true in server properties in Fabric after changing click on save button.
+Now we gave to restart queuemaster 
+Login into fabric go to environments->choose the enviroment link on the app Services
+AppServices->Integration Services->QueueMaster-Restart
+
+Select Restart as operation hit the service once service return true go to server properties change QUEUEMASTER_MAINTENANCE_MODE to false and save.
+
+===================================================================================================================
+
+

@@ -1,0 +1,142 @@
+CREATE DEFINER=`readwrite`@`%` PROCEDURE `fetch_restrictive_featureactionlimits_proc`(
+	IN _locale varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci,
+	IN _userId varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci,
+    IN _serviceDefinitionId varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci,
+    IN _roleId varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci,
+    IN _coreCustomerId varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci,
+    IN _accessPolicyIdList varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci
+)
+BEGIN
+	SET @select_statement = '';
+    SET @action_select_statement = '';
+	SET @action_select_statement = ("(SELECT featureaction.id AS actionId FROM featureaction LEFT JOIN feature ON ( feature.id = featureaction.Feature_id )");
+	
+	IF(_accessPolicyIdList != '') THEN 
+		SET @action_select_statement = CONCAT(@action_select_statement , "WHERE FIND_IN_SET(featureaction.accessPolicyId ,",QUOTE(_accessPolicyIdList),")");
+	END IF;
+	
+    SET @action_select_statement = CONCAT(@action_select_statement,")");
+    
+	IF(_serviceDefinitionId != '') THEN 
+		SET @select_statement = CONCAT("(SELECT servicedefinitionactionlimit.actionId AS actionId FROM servicedefinitionactionlimit WHERE servicedefinitionactionlimit.serviceDefinitionId = " , QUOTE(_serviceDefinitionId));
+		SET @select_statement = CONCAT(@select_statement , " AND servicedefinitionactionlimit.actionId IN" , @action_select_statement);
+        SET @select_statement = CONCAT(@select_statement , ")");
+        SET @action_select_statement = @select_statement;
+    END IF;	
+    IF(_roleId != '') THEN
+		SET @select_statement = CONCAT("(SELECT groupactionlimit.Action_id AS actionId FROM groupactionlimit WHERE groupactionlimit.Group_id = ",QUOTE(_roleId));
+		SET @select_statement = CONCAT(@select_statement , " AND groupactionlimit.Action_id IN ");
+		SET @select_statement = CONCAT(@select_statement , @action_select_statement);
+        SET @select_statement = CONCAT(@select_statement , ")");
+        SET @action_select_statement = @select_statement;
+    END IF;
+    IF(_coreCustomerId != '') THEN 
+		SET @select_statement = CONCAT("(SELECT contractactionlimit.actionId AS actionId FROM contractactionlimit WHERE contractactionlimit.coreCustomerId = ",QUOTE(_coreCustomerId));
+        SET @select_statement = CONCAT(@select_statement , " AND contractactionlimit.actionId IN " , @action_select_statement);
+        SET @select_statement = CONCAT(@select_statement , ")");
+        SET @action_select_statement = @select_statement;
+    END IF;
+	IF(_userId != '') THEN 
+		SET @select_statement = CONCAT("(SELECT customeraction.Action_id AS actionId FROM customeraction WHERE customeraction.Customer_id = ",QUOTE(_userId));
+		IF(_coreCustomerId != '') THEN 
+			SET @select_statement = CONCAT(@select_statement , " AND customeraction.coreCustomerId = " , QUOTE(_coreCustomerId));
+        END IF;
+        SET @select_statement = CONCAT(@select_statement , " AND customeraction.isAllowed = '1' AND customeraction.Action_id IN " , @action_select_statement);
+        SET @select_statement = CONCAT(@select_statement , ")");
+        SET @action_select_statement = @select_statement;
+    END IF;
+    SET @select_statement = "( SELECT 
+								feature.id AS featureId,
+								featuredisplaynamedescription.displayName AS featureName,
+                                featuredisplaynamedescription.displayDescription AS featureDescription,
+                                feature.Status_id AS featureStatus,
+                                featureaction.status AS actionStatus,
+                                featureaction.id AS actionId,
+                                actiondisplaynamedescription.displayName AS actionName,
+                                actiondisplaynamedescription.displayDescription AS actionDescription,
+                                featureaction.isAccountLevel AS isAccountLevel,
+                                featureaction.Type_id AS typeId,
+                                featureaction.limitgroupId as limitGroupId,
+                                featureaction.accesspolicyId as accessPolicyId,
+                                featureaction.actionlevelId as actionLevelId,
+                                null as limitTypeId,
+                                null as fiLimitValue";
+    if(_serviceDefinitionId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , ", null AS serviceLimitValue");
+    END IF;
+	IF(_roleId != '') THEN 
+		SET @select_statement = CONCAT(@select_statement , ", null AS groupLimitValue");
+    END IF;  
+    IF(_coreCustomerId != '') THEN 
+		SET @select_statement = CONCAT(@select_statement , ", null AS coreCustomerLimitValue");
+    END IF;
+    SET @select_statement = CONCAT(@select_statement , " FROM feature
+															LEFT JOIN featuredisplaynamedescription ON ( featuredisplaynamedescription.Feature_id = feature.id)
+															LEFT JOIN featureaction ON (featureaction.Feature_id = feature.id)
+                                                            LEFT JOIN actiondisplaynamedescription ON (actiondisplaynamedescription.Action_id = featureaction.id)");
+	IF(_coreCustomerId != '') THEN 
+		SET @select_statement = CONCAT(@select_statement , "LEFT JOIN contractactionlimit ON (contractactionlimit.actionId = featureaction.id)");
+    END IF;
+	SET @select_statement = CONCAT(@select_statement , " WHERE featureaction.Type_id = 'NON_MONETARY' AND feature.softdeleteflag <> 1 AND featureaction.id IN " , @action_select_statement);
+    SET @select_statement = CONCAT(@select_statement , " AND featuredisplaynamedescription.Locale_id = ",QUOTE(_locale));
+    SET @select_statement = CONCAT(@select_statement , " AND actiondisplaynamedescription.Locale_id = ",QUOTE(_locale) ,")");
+       
+    SET @select_statement = CONCAT(@select_statement , " UNION (SELECT 
+								feature.id AS featureId,
+								featuredisplaynamedescription.displayName AS featureName,
+                                featuredisplaynamedescription.displayDescription AS featureDescription,
+                                feature.Status_id AS featureStatus,
+                                featureaction.status AS actionStatus,
+                                featureaction.id AS actionId,
+                                actiondisplaynamedescription.displayName AS actionName,
+                                actiondisplaynamedescription.displayDescription AS actionDescription,
+                                featureaction.isAccountLevel AS isAccountLevel,
+                                featureaction.Type_id AS typeId,
+                                featureaction.limitgroupId as limitGroupId,
+                                featureaction.accesspolicyId as accessPolicyId,
+                                featureaction.actionlevelId as actionLevelId,
+                                actionlimit.LimitType_id as limitTypeId,
+                                actionlimit.value as fiLimitValue");
+	IF(_serviceDefinitionId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , ", servicedefinitionactionlimit.value AS serviceLimitValue");
+    END IF;
+    IF(_roleId != '') THEN 
+		SET @select_statement = CONCAT(@select_statement , ", groupactionlimit.value AS groupLimitValue");
+    END IF;
+    IF(_coreCustomerId != '') THEN 
+		SET @select_statement = CONCAT(@select_statement , ", contractactionlimit.value AS coreCustomerLimitValue");
+    END IF;
+	SET @select_statement = CONCAT(@select_statement , " FROM feature
+														LEFT JOIN featuredisplaynamedescription ON ( featuredisplaynamedescription.Feature_id = feature.id)
+														LEFT JOIN featureaction ON (featureaction.Feature_id = feature.id)
+                                                        LEFT JOIN actionlimit ON (actionlimit.Action_id = featureaction.id)
+                                                        LEFT JOIN actiondisplaynamedescription ON (actiondisplaynamedescription.Action_id = featureaction.id)");
+    IF(_serviceDefinitionId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , " LEFT JOIN servicedefinitionactionlimit ON ( servicedefinitionactionlimit.actionId = actionlimit.Action_id AND 
+																										servicedefinitionactionlimit.limitTypeId = actionlimit.LimitType_id)");
+                                                                                                        
+	END IF;
+    IF(_roleId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , " LEFT JOIN groupactionlimit ON ( groupactionlimit.Action_id = actionlimit.Action_id AND 
+																										groupactionlimit.LimitType_id = actionlimit.LimitType_id)");
+	END IF;
+    IF(_coreCustomerId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , " LEFT JOIN contractactionlimit ON ( contractactionlimit.actionId = actionlimit.Action_id AND 
+																										contractactionlimit.limitTypeId = actionlimit.LimitType_id)");
+	END IF;
+	SET @select_statement = CONCAT(@select_statement , " WHERE featureaction.Type_id = 'MONETARY' AND feature.softdeleteflag<>1");
+    IF(_serviceDefinitionId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , " AND servicedefinitionactionlimit.serviceDefinitionId = " , QUOTE(_serviceDefinitionId));
+	END IF;
+    IF(_roleId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , " AND groupactionlimit.Group_id = " , QUOTE(_roleId));
+	END IF;
+    IF(_coreCustomerId != '') THEN
+		SET @select_statement = CONCAT(@select_statement , " AND contractactionlimit.coreCustomerId = " , QUOTE(_coreCustomerId));
+	END IF;
+    SET @select_statement = CONCAT(@select_statement , " AND featureaction.id IN " , @action_select_statement);
+    SET @select_statement = CONCAT(@select_statement , " AND featuredisplaynamedescription.Locale_id = ",QUOTE(_locale));
+    SET @select_statement = CONCAT(@select_statement , " AND actiondisplaynamedescription.Locale_id = ",QUOTE(_locale) ,")");
+   PREPARE stmt FROM @select_statement; EXECUTE stmt; DEALLOCATE PREPARE stmt;
+    
+END

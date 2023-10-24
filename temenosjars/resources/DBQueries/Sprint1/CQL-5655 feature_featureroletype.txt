@@ -1,0 +1,57 @@
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_CAMPAIGN_MGMT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_CASH_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_ENROLLMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_INVESTMENT_DETAILS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_MARKET_AND_NEWS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_NEWS_AND_DOCUMENTS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_ORDER_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_PORTFOLIO_DETAILS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_PRODUCT_DETAILS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_REPORT_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_RETAIL_ACCOUNTS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WEALTH_WATCHLIST');
+
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'ACCOUNT_SETTINGS');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'ACCOUNT_SETTINGS');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'ALERT_MANAGEMENT');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'ALERT_MANAGEMENT');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'APPROVAL_MATRIX');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'APPROVAL_MATRIX');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'MESSAGES');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'MESSAGES');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'CUSTOM_VIEW');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'CUSTOM_VIEW');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'DISPUTE_TRANSACTIONS');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'DISPUTE_TRANSACTIONS');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'INTER_BANK_ACCOUNT_FUND_TRANSFER');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'INTER_BANK_ACCOUNT_FUND_TRANSFER');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'INTERNATIONAL_ACCOUNT_FUND_TRANSFER');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'INTERNATIONAL_ACCOUNT_FUND_TRANSFER');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'INTRA_BANK_FUND_TRANSFER');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'INTRA_BANK_FUND_TRANSFER');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'NOTIFICATION');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'NOTIFICATION');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'PROFILE_SETTINGS');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'PROFILE_SETTINGS');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'SIGNATORY_GROUP');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'TRANSFER_BETWEEN_OWN_ACCOUNT');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'TRANSFER_BETWEEN_OWN_ACCOUNT');
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'UNIFIED_TRANSFER');
+
+
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_CAMPAIGN') and (`Feature_id` = 'USER_MANAGEMENT');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_PROSPECT') and (`Feature_id` = 'USER_MANAGEMENT');

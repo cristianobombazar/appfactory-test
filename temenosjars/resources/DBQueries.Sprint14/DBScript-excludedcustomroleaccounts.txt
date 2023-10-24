@@ -1,0 +1,19 @@
+--Table creation is missing during setup. Need to execute this script to create table, if not exists.
+DROP TABLE IF EXISTS dbxdb.excludedcustomroleaccounts;
+
+CREATE TABLE dbxdb.excludedcustomroleaccounts (
+	id varchar(50) NOT NULL,
+	customRoleId varchar(50) DEFAULT NULL,
+	Account_id varchar(50) DEFAULT NULL,
+	AccountName varchar(50) DEFAULT NULL,
+	accountType varchar(50) DEFAULT NULL,
+	contractId varchar(50) DEFAULT NULL,
+	coreCustomerId varchar(45) DEFAULT NULL,
+	createdby varchar(50) DEFAULT NULL,
+	modifiedby varchar(50) DEFAULT NULL,
+	createdts datetime(2) DEFAULT NULL,
+	lastmodifiedts datetime(2) DEFAULT NULL,
+	synctimestamp datetime(2) DEFAULT NULL,
+	softdeleteflag bit DEFAULT 0 NOT NULL,
+	CONSTRAINT PK__customro__3213E83FC1DF4F66 PRIMARY KEY (id)
+);

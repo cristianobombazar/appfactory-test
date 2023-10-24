@@ -1,0 +1,9 @@
+DROP PROCEDURE IF EXISTS `dbxdb`.`fetch_proof_of_payment_proc`;
+
+CREATE DEFINER=`readwrite`@`%` PROCEDURE `dbxdb`.`fetch_proof_of_payment_proc`(
+IN transaction_id varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci
+)
+BEGIN
+	select proofOfPayment COLLATE utf8_general_ci as proofOfPayment from dbxdb.externalaccount where beneficiaryName in (select beneficiaryName from dbxdb.interbankfundtransfers i where i.confirmationNumber COLLATE utf8_general_ci = transaction_id)
+	UNION select proofOfPayment from dbxdb.interbankfundtransfersRefData  a where a.confirmationNumber COLLATE utf8_general_ci = transaction_id;
+END

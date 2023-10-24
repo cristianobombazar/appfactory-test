@@ -1,0 +1,33 @@
+-- the following proc to be updated in all environment. The change is only line #14.
+-- the change is - createdby is updated with name instead of customerid
+
+CREATE DEFINER=`readwrite`@`%` PROCEDURE `dbxdb`.`fetch_signatorygroup_details_proc`(
+  IN _signatoryGroupId varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci
+)
+BEGIN
+	select signatorygroup.signatoryGroupId as `signatoryGroupId`,
+	signatorygroup.signatoryGroupName as `signatoryGroupName`,
+	signatorygroup.signatoryGroupDescription as `signatoryGroupDescription`,
+	signatorygroup.coreCustomerId as `coreCustomerId`,
+	contractcorecustomers.coreCustomerName as `coreCustomerName`,
+	signatorygroup.createdts as `createdts`,
+	(select CONCAT(cust.FirstName,' ',IFNULL(cust.LastName,'')) from customer cust where cust.id=signatorygroup.createdby) as `createdby`,
+	signatorygroup.lastmodifiedts as `lastmodifiedts`,
+	customersignatorygroup.customerSignatoryGroupId as `customerSignatoryGroupId`,
+	customersignatorygroup.customerId as `customerId`,
+	customer.UserName AS `userName`,
+     CONCAT(customer.FirstName,
+                ' ',
+                IFNULL(customer.MiddleName, ''),
+                ' ',
+                IFNULL(customer.LastName, '')) AS `fullName`,
+	membergroup.Name as `customerRole`,
+	customersignatorygroup.createdts as `signatoryaddedts`
+	  from signatorygroup  
+	  left join customersignatorygroup  on signatorygroup.signatoryGroupId=customersignatorygroup.signatoryGroupId
+	  left join contractcorecustomers  on contractcorecustomers.coreCustomerId=signatorygroup.coreCustomerId 
+	  left join customer on customer.id = customersignatorygroup.customerId
+	  left join customergroup on customergroup.Customer_id = customersignatorygroup.customerId and customergroup.coreCustomerId = signatorygroup.coreCustomerId
+	  left join membergroup on membergroup.id = customergroup.Group_id
+	  where signatorygroup.signatoryGroupId=_signatoryGroupId;  
+END

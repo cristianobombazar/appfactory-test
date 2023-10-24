@@ -1,0 +1,17 @@
+CREATE TABLE `documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `transactionId` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contents` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `size` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `extension` varchar(7) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `createdby` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `modifiedby` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `createdts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `lastmodifiedts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `INDEX_DOCUMENT_ID` (`id`),
+  KEY `INDEX_TRANSACTION_ID` (`transactionId`),
+  KEY `INDEX_CREATED_BY` (`modifiedby`)
+) ENGINE=InnoDB AUTO_INCREMENT=184 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

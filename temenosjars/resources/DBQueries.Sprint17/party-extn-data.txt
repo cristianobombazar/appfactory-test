@@ -1,0 +1,7 @@
+update dbxdb.backendidentifier set BackendType='COMPANYPARTYID' where BackendId = '2230062155' AND BackendType = 'CORE';
+update dbxdb.backendidentifier set BackendType='COMPANYPARTYID' where BackendId = '2217233747' AND BackendType = 'CORE';
+update dbxdb.backendidentifier set BackendType='COMPANYPARTYID' where BackendId = '2230062155' AND BackendType = 'CORE';
+
+--TODO:
+The above queries to be executed in SIT, UAT, PREPROD & PROD ..
+Need to set backend ID ..

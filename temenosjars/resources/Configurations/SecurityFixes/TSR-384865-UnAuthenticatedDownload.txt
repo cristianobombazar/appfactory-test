@@ -1,0 +1,17 @@
+For unauthenticated file download issue we got below changes from the product , Still HF from the product is yet to release as it is under testing.
+We are suggesting to do below changes on MF services to solve the issue.
+Change the below object services from Public to Authenticated app User.
+Please reach us if any issues.
+
+Object Services Navigation path:
+1) InternalusersObjService -> internalUsers_view -> downloadUsersList
+2) AuditLogsObjSvc -> TransactionAndAuditLogs -> exportCustomerActivityLogs
+3) AuditLogsObjSvc -> TransactionAndAuditLogs -> exportTransactionalLogs
+4) AuditLogsObjSvc -> TransactionAndAuditLogs -> exportAdminConsoleLogs
+5) LocationObjService -> LocationsUsingCSV -> downloadLocationsCSV
+6) RolesAndPermissionsObjService -> permissions view -> downloadPermissionsList
+7) RolesAndPermissionsObjService -> role_view -> downloadRolesList
+8) CustomerGroupsAndEntitlObjSvc -> Group -> downloadGroupsList
+9) FeatureObjService -> feature -> downloadFeaturesList 
+
+Import TSR409855.zip to update the security level

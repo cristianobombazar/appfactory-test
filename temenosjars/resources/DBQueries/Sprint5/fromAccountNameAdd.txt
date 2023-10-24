@@ -1,0 +1,4 @@
+//adding a new column fromAccountName to all 3 types of payment
+alter table dbxdb.internationalfundtransfersRefData add fromAccountName varchar(50);
+alter table dbxdb.interbankfundtransfersRefData add fromAccountName varchar(50);
+alter table dbxdb.ownaccounttransfersRefData add fromAccountName varchar(50);

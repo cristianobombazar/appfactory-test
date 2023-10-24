@@ -1,0 +1,35 @@
+Need to make changes in: dbxdb_corecustomeraccounts_details_get_proc
+
+#####################Changed proc####
+
+
+CREATE DEFINER=`readwrite`@`%` PROCEDURE `corecustomeraccounts_details_get_proc`(
+IN _coreCustomerIdList TEXT CHARACTER SET UTF8 COLLATE utf8_general_ci,
+IN _customerId varchar(50) CHARACTER SET UTF8 COLLATE utf8_general_ci
+)
+BEGIN
+
+	SET SESSION group_concat_max_len = 1000000;
+    
+	SET @corecustomersList = (SELECT group_concat(contractcustomers.coreCustomerId SEPARATOR ',') from contractcustomers WHERE contractcustomers.customerId = _customerId AND FIND_IN_SET(contractcustomers.coreCustomerId,_coreCustomerIdList));
+
+	SET @selectstatement = concat("SELECT 
+           `contractcorecustomers`.`coreCustomerId` AS coreCustomerId , 
+           `contractcorecustomers`.`coreCustomerName` AS coreCustomerName ,
+           `customeraccounts`.`email` AS email ,
+           `customeraccounts`.`Customer_id` AS customerId ,
+           `customeraccounts`.`FavouriteStatus` AS favouriteStatus ,
+		   `customeraccounts`.`NickName` AS nickName ,
+
+           IF ((`customeraccounts`.`EStatementmentEnable`) = '1' ,'true' , 'false') AS `eStatementEnable`,
+           IF ((`contractcorecustomers`.`isBusiness`) = '1' ,'true' , 'false') AS `isBusinessAccount`,
+           `contractaccounts`.`accountId` AS accountId
+           from (`contractcorecustomers`) 
+		   JOIN (`contractaccounts`) ON (`contractcorecustomers`.`coreCustomerId` = `contractaccounts`.`coreCustomerId`)
+           JOIN (`customeraccounts`) ON (`customeraccounts`.`Account_id` = `contractaccounts`.`accountId`)
+           where FIND_IN_SET(`contractcorecustomers`.`coreCustomerId`, '",@corecustomersList,"') AND `customeraccounts`.`Customer_id` = '",_customerId,"'");
+           
+           PREPARE stmt FROM @selectstatement; EXECUTE stmt; DEALLOCATE PREPARE stmt;
+
+
+END

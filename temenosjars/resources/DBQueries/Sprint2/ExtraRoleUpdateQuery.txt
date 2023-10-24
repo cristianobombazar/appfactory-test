@@ -1,0 +1,1 @@
+UPDATE dbxdb.groupservicedefinition SET softdeleteflag = 1 where serviceDefinitionId = "707dfea8-d0fe-4154-89c3-e7d7ef2ee16a" and Group_id="7b99a1ec-6c3f-480f-822b-8d249efd72d7";

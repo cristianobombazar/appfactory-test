@@ -1,0 +1,151 @@
+DEV:
+====
+
+corecustid	contract id	contract name
+----------	----------- -------------
+100076502	5117704706	The Standard Bank of South Africa Ltd.
+522962924	7240550575	BrooksideEngineering
+505011790	2660656285	SouthernSpirit
+101077502	9693533134	TSPINTERNAL
+
+100076502	5117704706	The Standard Bank of South Africa Ltd.
+---------	----------  --------------------------------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502002', '3828023323', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502003', '3236032328', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502004', '9359229813', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502005', '1193526472', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502006', '6434833901', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502007', '9125938918', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502008', '2609025089', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502009', '2073531278', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502010', '1522218269', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502011', '0389921896', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502012', '5685916896', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502013', '9696635362', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502014', '2596815067', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502015', '4220719397', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502016', '3559314371', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502017', '6364007779', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502018', '6087810510', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502019', '5960137506', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502020', '8109210604', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502021', '0988014051', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502022', '2710828127', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502023', '8757612543', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502024', '0014409024', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502025', '3606320829', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502026', '0979907592', '1', '2230062155', 'CORE', 'customer_id', '5117704706', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+522962924	7240550575	BrooksideEngineering
+---------	----------  --------------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924001', '9432550343', '1', '2217233747', 'CORE', 'customer_id', '7240550575', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924002', '6923815053', '1', '2217233747', 'CORE', 'customer_id', '7240550575', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+505011790	2660656285	SouthernSpirit
+---------	----------	--------------
+
+101077502	9693533134	TSPINTERNAL
+---------	----------	-----------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502001', '6087810510', '1', '2216827862', 'CORE', 'customer_id', '9693533134', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502002', '8109210604', '1', '2216827862', 'CORE', 'customer_id', '9693533134', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502003', '3559314371', '1', '2216827862', 'CORE', 'customer_id', '9693533134', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502004', '2073531278', '1', '2216827862', 'CORE', 'customer_id', '9693533134', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502005', '0988014051', '1', '2216827862', 'CORE', 'customer_id', '9693533134', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+===========================================================
+===========================================================
+
+SIT:
+====
+corecustid	contract id	contract name
+----------	----------- -------------
+522962924	2952812129	BrooksideEngineering
+505011790	8096300873	SouthernSpirit
+101077502	2489126701	TSPINTERNAL
+
+522962924	2952812129	BrooksideEngineering
+---------	----------	--------------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924001', '9469354144', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924002', '7304644285', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924003', '4227200842', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924004', '0392657817', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924005', '6299047348', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924006', '6699516033', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924007', '6299047348', '1', '2217235421', 'CORE', 'customer_id', '2952812129', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+
+505011790	8096300873	SouthernSpirit
+---------	----------	--------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790001', '1593319588', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790002', '5877207246', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790003', '7439619708', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790004', '9535503522', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790005', '9325148486', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790006', '3449417498', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790007', '2079814046', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790008', '9929503808', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790009', '5400159893', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790010', '2331944005', '1', '2217232909', 'CORE', 'customer_id', '8096300873', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+101077502	2489126701	TSPINTERNAL
+---------	----------	-----------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502001', '0735626703', '1', '2216836417', 'CORE', 'customer_id', '2489126701', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502002', '1223050633', '1', '2216836417', 'CORE', 'customer_id', '2489126701', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502003', '4127711275', '1', '2216836417', 'CORE', 'customer_id', '2489126701', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502004', '4709756931', '1', '2216836417', 'CORE', 'customer_id', '2489126701', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502005', '8803832643', '1', '2216836417', 'CORE', 'customer_id', '2489126701', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-101077502006', '1536543907', '1', '2216836417', 'CORE', 'customer_id', '2489126701', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+
+
+
+
+
+===========================================================
+===========================================================
+
+UAT:
+====
+corecustid	contract id	contract name
+----------	----------- -------------
+100076502	9310702937	The Standard Bank of South Africa Ltd.
+505011790	2395711842	Southern Spirit
+522962924	3130757660	Brookside Engineering
+
+100076502	9310702937	The Standard Bank of South Africa Ltd.
+---------	----------	--------------------------------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502001', '8276016654', '1', '2232238516', 'CORE', 'customer_id', '9310702937', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502002', '3432818905', '1', '2232238516', 'CORE', 'customer_id', '9310702937', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502003', '8717805562', '1', '2232238516', 'CORE', 'customer_id', '9310702937', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502004', '7155721648', '1', '2232238516', 'CORE', 'customer_id', '9310702937', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502005', '6450010817', '1', '2232238516', 'CORE', 'customer_id', '9310702937', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-100076502006', '6473013035', '1', '2232238516', 'CORE', 'customer_id', '9310702937', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+505011790	2395711842	Southern Spirit
+---------	----------	---------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790001', '0554130137', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790002', '9906824198', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790003', '0528222032', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790004', '1149732240', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790005', '4977634048', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790006', '3928936280', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790007', '8089128305', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-505011790008', '7657326451', '1', '2229150810', 'CORE', 'customer_id', '2395711842', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+522962924	3130757660	Brookside Engineering
+---------	----------	---------------------
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924001', '7453705508', '1', '2229150591', 'CORE', 'customer_id', '3130757660', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924002', '0222208273', '1', '2229150591', 'CORE', 'customer_id', '3130757660', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+INSERT INTO dbxdb.backendidentifier (id, Customer_id, sequenceNumber, BackendId, BackendType, identifier_name, contractId, contractTypeId, createdts, lastmodifiedts, isTypeBusiness, CompanyId) VALUES ('10082d84-8c68-4cbf-882f-522962924003', '9906824198', '1', '2229150591', 'CORE', 'customer_id', '3130757660', NULL, '2022-11-01 14:43:44', '2022-11-01 14:43:44', '0', 'GB0010001');
+
+
+
+
+===========================================================
+===========================================================
+
+PROD:
+=====
+
+TO BE ADDED 
+

@@ -1,0 +1,11 @@
+ALTER TABLE dbxdb.externalaccount
+ADD COLUMN 
+(
+beneLimit VARCHAR(200),
+paymentCurrency VARCHAR(200),
+beneficiaryReference VARCHAR(200),
+statementReference VARCHAR(200),
+proofOfPayment VARCHAR(200),
+cellphone VARCHAR(200),
+emailAddress VARCHAR(200)
+);

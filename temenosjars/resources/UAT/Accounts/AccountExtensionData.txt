@@ -1,0 +1,27 @@
+UAT_ACCOUNTS
+================
+added in both server properties and client propertiesw
+AE_20592531_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_90390504_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90702530_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90477901_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90390512_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90775287_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90775295_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90775309_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90775325_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90674383_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90583787_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90720172_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_7220201_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_90258312_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90563123_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90066138_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_1294210_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_21681481_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_22724184_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_73075353_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_90531515_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_90470516_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}
+AE_70893853_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"LOCAL_ACC"}
+AE_90230183_EXTENSIONDATA   {"bic":"SBZAZAJJ","cbsid":"001","accountType":"CFC"}

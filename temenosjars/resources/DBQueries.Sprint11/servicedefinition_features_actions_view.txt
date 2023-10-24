@@ -1,0 +1,56 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `dbxdb`.`servicedefinition_features_actions_view` AS
+    SELECT 
+        `dbxdb`.`servicedefinitionactionlimit`.`serviceDefinitionId` AS `serviceDefinitionId`,
+        `dbxdb`.`servicedefinitionactionlimit`.`actionId` AS `actionId`,
+        `dbxdb`.`servicedefinitionactionlimit`.`limitTypeId` AS `limitTypeId`,
+        `dbxdb`.`servicedefinitionactionlimit`.`value` AS `value`,
+        `dbxdb`.`servicedefinitionactionlimit`.`id` AS `serviceDefinitionActionLimitId`,
+        `dbxdb`.`servicedefinitionactionlimit`.`softdeleteflag` AS `softdelete`,
+        `dbxdb`.`servicedefinition`.`serviceType` AS `serviceType`,
+        `dbxdb`.`servicedefinition`.`name` AS `serviceDefinitionName`,
+        `dbxdb`.`servicedefinition`.`description` AS `serviceDefinitionDescription`,
+        `dbxdb`.`actiondisplaynamedescription`.`displayName` AS `actionName`,
+        `dbxdb`.`actiondisplaynamedescription`.`displayDescription` AS `actionDescription`,
+        `dbxdb`.`featureaction`.`Type_id` AS `actionTypeId`,
+        `dbxdb`.`featureaction`.`Feature_id` AS `featureId`,
+        `dbxdb`.`featureaction`.`isMFAApplicable` AS `isMFAApplicable`,
+        `dbxdb`.`featureaction`.`isAccountLevel` AS `isAccountLevel`,
+        `dbxdb`.`featureaction`.`isPrimary` AS `isPrimary`,
+        `dbxdb`.`featureaction`.`DisplaySequence` AS `actionDisplaysequence`,
+        `dbxdb`.`featureaction`.`dependency` AS `actionDependency`,
+        `dbxdb`.`featureaction`.`status` AS `actionStatus`,
+        `dbxdb`.`accesspolicy`.`name` AS `accessPolicy`,
+        `dbxdb`.`featureaction`.`accesspolicyId` AS `accessPolicyId`,
+        `dbxdb`.`featureaction`.`limitgroupId` AS `limitGroupId`,
+        `dbxdb`.`limitgroup`.`name` AS `limitGroup`,
+        `dbxdb`.`actionlevel`.`name` AS `actionlevel`,
+        `dbxdb`.`featureaction`.`actionlevelId` AS `actionlevelId`,
+        `dbxdb`.`dependentactions`.`dependentactionId` AS `dependentactionId`,
+        `dbxdb`.`dependentactions`.`featureId` AS `dependentFeatureId`,
+        `dbxdb`.`dependentactions`.`actionName` AS `dependentActionName`,
+        `dbxdb`.`dependentactions`.`featureName` AS `dependentFeatureName`,
+        `dbxdb`.`featuredisplaynamedescription`.`displayName` AS `featureName`,
+        `dbxdb`.`featuredisplaynamedescription`.`displayDescription` AS `featureDescription`,
+        `dbxdb`.`feature`.`Type_id` AS `featureTypeId`,
+        `dbxdb`.`feature`.`Status_id` AS `featureStatusId`,
+        `dbxdb`.`feature`.`DisplaySequence` AS `featureDisplaysequence`,
+        `dbxdb`.`feature`.`isPrimary` AS `featureIsPrimary`
+    FROM
+        (((((((((`dbxdb`.`servicedefinitionactionlimit`
+        LEFT JOIN `dbxdb`.`servicedefinition` ON ((`dbxdb`.`servicedefinition`.`id` = `dbxdb`.`servicedefinitionactionlimit`.`serviceDefinitionId`)))
+        LEFT JOIN `dbxdb`.`featureaction` ON ((`dbxdb`.`featureaction`.`id` = `dbxdb`.`servicedefinitionactionlimit`.`actionId`)))
+        LEFT JOIN `dbxdb`.`actiondisplaynamedescription` ON (((`dbxdb`.`actiondisplaynamedescription`.`Action_id` = `dbxdb`.`servicedefinitionactionlimit`.`actionId`)
+            AND (`dbxdb`.`actiondisplaynamedescription`.`Locale_id` = 'en-GB'))))
+        LEFT JOIN `dbxdb`.`dependentactions` ON ((`dbxdb`.`featureaction`.`id` = `dbxdb`.`dependentactions`.`actionId`)))
+        LEFT JOIN `dbxdb`.`feature` ON ((`dbxdb`.`feature`.`id` = `dbxdb`.`featureaction`.`Feature_id`)))
+        LEFT JOIN `dbxdb`.`featuredisplaynamedescription` ON (((`dbxdb`.`featuredisplaynamedescription`.`Feature_id` = `dbxdb`.`featureaction`.`Feature_id`)
+            AND (`dbxdb`.`featuredisplaynamedescription`.`Locale_id` = 'en-GB'))))
+        LEFT JOIN `dbxdb`.`accesspolicy` ON ((`dbxdb`.`featureaction`.`accesspolicyId` = `dbxdb`.`accesspolicy`.`id`)))
+        LEFT JOIN `dbxdb`.`limitgroup` ON ((`dbxdb`.`featureaction`.`limitgroupId` = `dbxdb`.`limitgroup`.`id`)))
+        LEFT JOIN `dbxdb`.`actionlevel` ON ((`dbxdb`.`featureaction`.`actionlevelId` = `dbxdb`.`actionlevel`.`id`)))
+    WHERE
+        (`dbxdb`.`feature`.`softdeleteflag` <> 1)

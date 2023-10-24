@@ -1,0 +1,10 @@
+-- Table to store the server to server ping token created from job
+-- The data will be saved in DB only if B2BPINGTOKEN_SAVEINDB is set to YES in client-app properties
+-- This functionality is only for testing purpose and will not have any impact for sbg-553
+
+CREATE TABLE dbxdb.SbgB2BPingToken (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `token` varchar(4096) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `recordedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

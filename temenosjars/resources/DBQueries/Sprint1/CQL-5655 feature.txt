@@ -1,0 +1,49 @@
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACCESS_CASH_POSITION');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACCESS_ENGAGE');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACCOUNT_AGGREGATION');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACH_COLLECTION');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACH_FILES');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACH_PAYMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'APPLICANT_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'BILL_PAY');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'BUDGET_POT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'BULK_PAYMENT_REQUEST');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'BULK_PAYMENT_FILES');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'BULK_PAYMENT_TEMPLATE');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'CDP_CONSENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'CHECK_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'CHEQUE_BOOK_REQUEST');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'CONVERSATIONAL_BANKING');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'DIRECT_DEBIT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'DOMESTIC_WIRE_TRANSFER');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'FEEDBACK');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'INITIATE_FUNDING');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'FX_RATES');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'GOAL_POT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'INTERNATIONAL_WIRE_TRANSFER');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'LOGIN');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'CARD_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'NAO');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '0' WHERE (`id` = 'ONLINE_BANKING_ACCESS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'OPEN_BANKING_ACCESS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'PASSWORD_UPDATE');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'PAYEE_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'PAY_MULTIPLE_BENEFICIARIES');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'PERSONAL_FINANCE_MANAGEMENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'P2P');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'PROSPECT_EXPIRY');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'PSD2_TPP_CONSENT');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'RDC');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'RESET_SECURITY_QUESTIONS');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'RESUME_AUTHENTICATION');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'REVOKE_STOP_PAYMENT_REQUEST');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'USERNAME_UPDATE');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'USER_VERIFICATION');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'VIEW_CHEQUES');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'WITHDRAW_CASH');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'IMPORT_LC');
+UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'EXPORT_LC');
+
+
+
+

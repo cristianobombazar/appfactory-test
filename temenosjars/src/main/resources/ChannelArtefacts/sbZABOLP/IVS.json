@@ -1,0 +1,32 @@
+{
+    "name": "BOLPlusIVS",
+    "endpoint": "BOLPlusIVS",
+    "failOnError": true,
+    "failOnBusy": true,
+    "parameters": [{
+            "name": "FieldValue",
+            "path": "value"
+        }, {
+            "name": "TrnRef",
+            "path": "transaction::TrnReference"
+        }, {
+            "name": "Seq",
+            "path": "money::SequenceNumber"
+        }, {
+            "name": "ThirdPartyCCN",
+            "path": "money::ThirdParty.CustomsClientNumber"
+        }, {
+            "name": "ResidentInvCCN",
+            "path": "transaction::Resident.Individual.CustomsClientNumber"
+        }, {
+            "name": "ResidentEntityCCN",
+            "path": "transaction::Resident.Entity.CustomsClientNumber"
+        }, {
+            "name": "TDN",
+            "path": "TransportDocumentNumber"
+        }, {
+            "name": "MRN",
+            "path": "ImportControlNumber"
+        }
+    ]
+}

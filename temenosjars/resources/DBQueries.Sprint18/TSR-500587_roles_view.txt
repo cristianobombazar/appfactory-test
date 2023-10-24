@@ -1,0 +1,36 @@
+CREATE OR REPLACE VIEW `roles_view` AS
+    SELECT 
+        `dbxdb`.`role`.`id` AS `role_id`,
+        `dbxdb`.`role`.`Type_id` AS `roleType_id`,
+        `dbxdb`.`role`.`Name` AS `role_Name`,
+        `dbxdb`.`role`.`Description` AS `role_Desc`,
+        `dbxdb`.`role`.`Status_id` AS `Status_id`,
+        `status`.`Description` AS `Status_Desc`,
+        (SELECT 
+                COUNT(`rolepermission`.`Role_id`)
+            FROM
+                (`rolepermission`
+                JOIN `permission`)
+            WHERE
+                ((`dbxdb`.`rolepermission`.`Role_id` = `dbxdb`.`role`.`id`)
+                    AND (`dbxdb`.`rolepermission`.`Permission_id` = `dbxdb`.`permission`.`id`)
+                    AND (`dbxdb`.`permission`.`Status_id` = 'SID_ACTIVE')
+                    AND (`dbxdb`.`permission`.`softdeleteflag` = 0))) AS `permission_Count`,
+        (SELECT 
+                COUNT(`userrole`.`User_id`)
+            FROM
+                `dbxdb`.`userrole`
+            WHERE
+                `dbxdb`.`userrole`.`Role_id` IN (SELECT 
+                        `dbxdb`.`rolepermission`.`Role_id`
+                    FROM
+                        `dbxdb`.`rolepermission`
+                    WHERE
+                        (`dbxdb`.`rolepermission`.`Role_id` = `role`.`id`))) AS `Users_Count`,
+        (CASE `role`.`Status_id`
+            WHEN 'SID_ACTIVE' THEN 'Active'
+            ELSE 'Inactive'
+        END) AS `Status`
+    FROM
+        (`role`
+        JOIN `status` ON ((`dbxdb`.`role`.`Status_id` = `status`.`id`)))

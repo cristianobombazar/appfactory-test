@@ -1,0 +1,17 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `dbxdb`.`customer_request_category_count_view` AS
+    SELECT 
+        `dbxdb`.`requestcategory`.`id` AS `requestcategory_id`,
+        `dbxdb`.`requestcategory`.`Name` AS `requestcategory_Name`,
+        COUNT(`dbxdb`.`customerrequest`.`id`) AS `request_count`
+    FROM
+        (`dbxdb`.`requestcategory`
+        LEFT JOIN `dbxdb`.`customerrequest` ON (((`dbxdb`.`customerrequest`.`RequestCategory_id` = `dbxdb`.`requestcategory`.`id`)
+            AND (`dbxdb`.`customerrequest`.`Status_id` = 'SID_OPEN'))))
+			WHERE `dbxdb`.`requestcategory`.`softdeleteflag` != '1'
+    GROUP BY `dbxdb`.`requestcategory`.`id`
+	
+	

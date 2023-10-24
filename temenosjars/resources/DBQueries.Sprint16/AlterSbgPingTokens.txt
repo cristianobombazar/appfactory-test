@@ -1,0 +1,1 @@
+alter table dbxdb.SbgPingTokens modify updatedts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;

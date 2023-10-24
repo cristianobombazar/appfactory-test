@@ -1,0 +1,4 @@
+update dbxdb.feature set softdeleteflag =1 where id = "DISPUTE_TRANSACTIONS";
+update dbxdb.feature set softdeleteflag =1 where id = "INTER_BANK_ACCOUNT_FUND_TRANSFER";
+update dbxdb.feature set softdeleteflag =1 where id = "INTRA_BANK_FUND_TRANSFER";
+update dbxdb.feature set softdeleteflag =1 where id = "TRANSFER_BETWEEN_OWN_ACCOUNT";

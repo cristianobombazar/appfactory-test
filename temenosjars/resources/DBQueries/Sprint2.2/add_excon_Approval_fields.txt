@@ -1,0 +1,5 @@
+ALTER TABLE dbxdb.internationalfundtransfersRefData
+ADD COLUMN exconApproval varchar(500);
+
+ALTER TABLE dbxdb.ownaccounttransfersRefData
+ADD COLUMN exconApproval varchar(500);

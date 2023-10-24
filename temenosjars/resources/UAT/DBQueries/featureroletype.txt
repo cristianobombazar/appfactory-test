@@ -1,0 +1,2 @@
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_RETAIL') and (`Feature_id` = 'ONLINE_BANKING_ACCESS');
+UPDATE `dbxdb`.`featureroletype` SET `softdeleteflag` = '1' WHERE (`RoleType_id` = 'TYPE_ID_WEALTH') and (`Feature_id` = 'ONLINE_BANKING_ACCESS');

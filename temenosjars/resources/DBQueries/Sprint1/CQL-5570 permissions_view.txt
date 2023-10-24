@@ -1,0 +1,43 @@
+USE `dbxdb`;
+CREATE 
+     OR REPLACE ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `dbxdb`.`permissions_view` AS
+    SELECT 
+        `dbxdb`.`permission`.`id` AS `Permission_id`,
+        `dbxdb`.`permission`.`Type_id` AS `PermissionType_id`,
+        `dbxdb`.`permission`.`Name` AS `Permission_Name`,
+        `dbxdb`.`permission`.`Description` AS `Permission_Desc`,
+        `dbxdb`.`permission`.`Status_id` AS `Status_id`,
+        `dbxdb`.`status`.`Description` AS `Status_Desc`,
+        (SELECT 
+                COUNT(`dbxdb`.`rolepermission`.`Role_id`)
+            FROM
+                `dbxdb`.`rolepermission`
+            WHERE
+                (`dbxdb`.`rolepermission`.`Permission_id` = `dbxdb`.`permission`.`id`)) AS `Role_Count`,
+        ((SELECT 
+                COUNT(`dbxdb`.`userpermission`.`Permission_id`)
+            FROM
+                `dbxdb`.`userpermission`
+            WHERE
+                (`dbxdb`.`userpermission`.`Permission_id` = `dbxdb`.`permission`.`id`)) + (SELECT 
+                COUNT(`dbxdb`.`userrole`.`User_id`)
+            FROM
+                `dbxdb`.`userrole`
+            WHERE
+                `dbxdb`.`userrole`.`Role_id` IN (SELECT 
+                        `dbxdb`.`rolepermission`.`Role_id`
+                    FROM
+                        `dbxdb`.`rolepermission`
+                    WHERE
+                        (`dbxdb`.`rolepermission`.`Permission_id` = `dbxdb`.`permission`.`id`)))) AS `Users_Count`,
+        (CASE `dbxdb`.`permission`.`Status_id`
+            WHEN 'SID_ACTIVE' THEN 'Active'
+            ELSE 'Inactive'
+        END) AS `Status`
+    FROM
+        (`dbxdb`.`permission`
+        JOIN `dbxdb`.`status` ON ((`dbxdb`.`permission`.`Status_id` = `dbxdb`.`status`.`id`)))
+        WHERE (`dbxdb`.`permission`.`softdeleteflag` != 1);

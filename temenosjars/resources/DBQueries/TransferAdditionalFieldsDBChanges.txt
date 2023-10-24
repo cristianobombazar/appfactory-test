@@ -1,0 +1,19 @@
+/*adding new table for additional fields*/
+
+CREATE TABLE dbxdb.internationalfundtransfersRefData (
+    referenceId bigint(20) NOT NULL,
+    purposecode varchar (6),
+	compliancecode varchar (50),
+	statementrefno varchar (48),
+	benerefeno varchar (48),
+    PRIMARY KEY (referenceId),
+    FOREIGN KEY (referenceId) REFERENCES dbxdb.internationalfundtransfers(transactionId)
+);
+/*if we create new table give varchar 50 for compliancecode column then no need to alter table.*/
+/*if table is already existed then we need to alter table*/
+
+alter table dbxdb.internationalfundtransfersRefData drop column compliancecode;
+alter table dbxdb.internationalfundtransfersRefData add compliancecode varchar(50);
+
+ALTER table dbxdb.internationalfundtransfersRefData add column rfqDetails varchar(1024);
+ALTER TABLE dbxdb.internationalfundtransfersRefData  MODIFY benerefeno varchar(140);

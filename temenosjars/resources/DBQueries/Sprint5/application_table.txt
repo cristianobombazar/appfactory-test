@@ -1,0 +1,3 @@
+update dbxdb.application set currencyCode = 'ZAR';
+/*Setting it as 0 to avoid calls to T24 to fetch pending approval transaction*/
+update dbxdb.application set stateManagementAvailable = 0 where id = 2;

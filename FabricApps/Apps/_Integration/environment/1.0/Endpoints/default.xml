@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" type="JSON" url="https://run.mocky.io/v3/c2cf4359-2771-41c9-8ade-6c0dda5fe5a1" encryptSecureInfo="false">
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+    </config>
+    <apiThrottling/>
+    <jsonpath>false</jsonpath>
+</endpoint>

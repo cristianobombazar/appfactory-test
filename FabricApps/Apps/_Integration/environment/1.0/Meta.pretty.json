@@ -1,0 +1,9 @@
+{
+    "serviceType": "integration",
+    "jars": [
+        {
+            "name": "temenosjars-0.0.1-SNAPSHOT.jar",
+            "type": "jar"
+        }
+    ]
+}

@@ -27,8 +27,4 @@
             <version>9.1.0.0</version>
         </dependency>
     </dependencies>
-    <build>
-        <finalName>appfactorytest</finalName>
-    </build>
-
 </project>

@@ -1,0 +1,11 @@
+{
+  "subType" : "customapp",
+  "description" : "AppFactoryAppTest",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "environment",
+    "version" : "1.0",
+    "etag" : "ab934e07-9cd1-4c19-a1e6-8f42b398f4e6"
+  } ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

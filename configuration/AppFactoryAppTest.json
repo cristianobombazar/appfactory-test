@@ -1,0 +1,16 @@
+{
+  "identity": {},
+  "objectsvc": {},
+  "integration": {
+    "environment": {
+      "rateLimitPerIP": "0",
+      "server.auth.mode": "none",
+      "ignorehttpproxy": "true",
+      "totalRateLimit": "0",
+      "type": "JSON",
+      "version": "1.0",
+      "url": "https://run.mocky.io/v3/c2cf4359-2771-41c9-8ade-6c0dda5fe5a1"
+    }
+  },
+  "formatVersion": "2.0"
+}

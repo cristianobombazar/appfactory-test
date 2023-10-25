@@ -1,4 +1,0 @@
-INSERT INTO dbxdb.channeltext (channelID, LanguageCode, Description) VALUES ('CH_EMAIL', 'en-GB', 'Email');
-INSERT INTO dbxdb.channeltext (channelID, LanguageCode, Description) VALUES ('CH_NOTIFICATION_CENTER', 'en-GB', 'Notification Center');
-INSERT INTO dbxdb.channeltext (channelID, LanguageCode, Description) VALUES ('CH_PUSH_NOTIFICATION', 'en-GB', 'Push Notification');
-INSERT INTO dbxdb.channeltext (channelID, LanguageCode, Description) VALUES ('CH_SMS', 'en-GB', 'SMS/Text');

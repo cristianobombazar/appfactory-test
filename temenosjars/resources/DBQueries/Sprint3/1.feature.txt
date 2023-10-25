@@ -1,2 +1,0 @@
-UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'CALL_BANK');
-UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'LOAN_SCHEDULE');

@@ -1,4 +1,0 @@
-/*Increasing the length value of purposecode in DB for CYN payments*/
-
-
-ALTER TABLE dbxdb.internationalfundtransfersRefData Modify purposecode VARCHAR(128);

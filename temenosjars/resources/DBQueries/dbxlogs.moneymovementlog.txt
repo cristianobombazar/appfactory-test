@@ -1,2 +1,0 @@
-ALTER TABLE dbxlogs.moneymovementlog MODIFY payeeName varchar(100);
-ALTER TABLE dbxlogs.moneymovementlog MODIFY beneficiaryName varchar(100);

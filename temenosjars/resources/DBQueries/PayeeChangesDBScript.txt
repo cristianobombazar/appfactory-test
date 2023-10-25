@@ -1,7 +1,0 @@
-alter table dbxdb.externalaccount add entityType varchar(16) not null;
-alter table dbxdb.externalaccount add state varchar(16);
-alter table dbxdb.externalaccount add beneCode varchar(64) not null;
-
-
-ALTER TABLE dbxdb.internationalfundtransfers MODIFY bankName VARCHAR(128);
-ALTER TABLE dbxdb.externalaccount MODIFY bankName VARCHAR(128) ;

@@ -1,7 +1,0 @@
-{
-  "ContactName": ${TPContactName},
-  "ContactSurname": ${TPContactSurname},
-  "Email": ${TPContactEmail},
-  "Fax": ${TPContactFax},
-  "Telephone": ${TPContactTel}
-}

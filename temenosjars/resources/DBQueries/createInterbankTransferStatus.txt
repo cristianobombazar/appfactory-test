@@ -1,9 +1,0 @@
-CREATE TABLE `interbankTransferStatus` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `transactionId` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `recordedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `transferStatus` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `encodedData` varchar(10240) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `reasonCode` varchar(8) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1209 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

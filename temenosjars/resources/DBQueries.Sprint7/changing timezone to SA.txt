@@ -1,1 +1,0 @@
-UPDATE `dbxdb`.`application` SET `timeZoneOffset` = 'UTC+2:00' WHERE (`id` = '2');

@@ -1,6 +1,0 @@
-UPDATE `dbxdb`.`permission` SET `softdeleteflag` = '1' WHERE (`id` = 'PID39');
-UPDATE `dbxdb`.`permission` SET `softdeleteflag` = '1' WHERE (`id` = 'PID85');
-UPDATE `dbxdb`.`permission` SET `softdeleteflag` = '1' WHERE (`id` = 'PID70');
-UPDATE `dbxdb`.`permission` SET `softdeleteflag` = '1' WHERE (`id` = 'PID69');
-UPDATE `dbxdb`.`permission` SET `softdeleteflag` = '1' WHERE (`id` = 'PID71');
-UPDATE `dbxdb`.`permission` SET `softdeleteflag` = '1' WHERE (`id` = 'PID72');

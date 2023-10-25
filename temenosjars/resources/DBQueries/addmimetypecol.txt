@@ -1,1 +1,0 @@
-ALTER TABLE dbxdb.documents ADD COLUMN mimeType VARCHAR(300) AFTER extension;

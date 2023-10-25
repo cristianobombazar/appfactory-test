@@ -1,1 +1,0 @@
-update dbxdb.role set softdeleteflag =1 where id != "RID_BUSINESS" and id != "RID_FRONTLINE_STAFF" and id!= "RID_OPERATIONS" and id!="RID_MANAGER" and id!="RID_SUPERADMIN"

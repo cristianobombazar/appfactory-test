@@ -1,6 +1,0 @@
-UPDATE `dbxdb`.`requestcategory` SET `softdeleteflag` = '1' WHERE (`id` = 'RCID_ATM');
-UPDATE `dbxdb`.`requestcategory` SET `softdeleteflag` = '1' WHERE (`id` = 'RCID_CREDITCARD');
-UPDATE `dbxdb`.`requestcategory` SET `softdeleteflag` = '1' WHERE (`id` = 'RCID_DEBITCARD');
-UPDATE `dbxdb`.`requestcategory` SET `softdeleteflag` = '1' WHERE (`id` = 'RCID_INCORRECTDEBITORCREDITCHARGES');
-UPDATE `dbxdb`.`requestcategory` SET `softdeleteflag` = '1' WHERE (`id` = 'RCID_LOANS');
-UPDATE `dbxdb`.`requestcategory` SET `softdeleteflag` = '1' WHERE (`id` = 'RCID_MOBILEBANKING');

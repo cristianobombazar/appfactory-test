@@ -1,1 +1,0 @@
-UPDATE `dbxdb`.`application` SET `deploymentGeography` = 'EUROPE' WHERE (`id` = '2');

@@ -1,5 +1,0 @@
-/* adding these lines belongs to Mpilo*/
-
-ALTER TABLE dbxdb.externalaccount ADD isApproved tinyint(1) NULL;
-ALTER TABLE dbxdb.externalaccount ADD popEmailAddress varchar(50) NULL;
-ALTER TABLE dbxdb.externalaccount ADD popSmsNumber varchar(45) NULL;

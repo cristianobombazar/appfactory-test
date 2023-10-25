@@ -1,4 +1,0 @@
-update dbxdb.membergroup set softdeleteflag =1 where 
-(id = "2e0440a5-c3aa-4a18-b7bf-c9ff0ae01233" or id = "4dd6183f-61d2-410f-8a4f-871af67ac933" 
-or id = "73d0c93f-04a9-4f5b-a542-c87acf4608b7" or id = "a759860a-683a-4d41-81f8-fbd97d53b608"
-or id = "fd5a5ea1-2991-4668-a514-e2fc28a401fd" or id = "ff53ff1f-a2a9-4704-826e-474704fb65ba");

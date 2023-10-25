@@ -1,3 +1,0 @@
-Need to modify below in App Services for Reports to work
-REPORTS_FABRIC_LOGIN_USERNAME
-REPORTS_FABRIC_LOGIN_PASSWORD

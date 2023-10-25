@@ -1,5 +1,0 @@
-{
-  "UCR": ${IEUCR},
-  "MRN": ${IEMRN},
-  "Amount": ${IEAmount}
-}

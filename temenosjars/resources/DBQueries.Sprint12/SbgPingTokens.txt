@@ -1,9 +1,0 @@
-CREATE TABLE SbgPingTokens (
-	username varchar(64) NOT NULL,
-	accesstoken	varchar(10240) NOT NULL,
-	refreshtoken varchar(64) NOT NULL,
-	expiresin varchar(16) NOT NULL,
-	createdts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	updatedts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,	
-	PRIMARY KEY (username)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

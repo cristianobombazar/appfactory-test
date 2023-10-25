@@ -1,3 +1,0 @@
-
-/*Adding a new column to save beneficiary state or status (new, existing, once)*/
-alter table dbxdb.interbankfundtransfersRefData add beneficiaryCategory varchar(20);

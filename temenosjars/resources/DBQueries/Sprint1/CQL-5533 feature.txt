@@ -1,7 +1,0 @@
-UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'MANAGE_ACCOUNT_STATEMENTS');
-UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'STOP_PAYMENT_REQUEST');
-UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'ACH_PAYMENT');
-UPDATE `dbxdb`.`feature` SET `softdeleteflag` = '1' WHERE (`id` = 'TRANSACTION_MANAGEMENT');
-
-
-

@@ -1,2 +1,0 @@
-/*CQL-8221*/
-alter table dbxdb.internationalfundtransfersRefData modify column bopDetails mediumtext;

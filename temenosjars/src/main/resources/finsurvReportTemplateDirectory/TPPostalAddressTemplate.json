@@ -1,8 +1,0 @@
-{
-  "AddressLine1": ${TPPostalAddressLine1},
-  "AddressLine2": ${TPPostalAddressLine2},
-  "Suburb": ${TPPostalAddressSuburb},
-  "City": ${TPPostalAddressCity},
-  "PostalCode": ${TPPostalAddressPostalCode},
-  "Province": ${TPPostalAddressProvince}
-}

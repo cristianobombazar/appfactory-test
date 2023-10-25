@@ -1,5 +1,0 @@
-Job name: GETPINGTOKEN
-Java Class: com.kony.sbg.javaservices.FetchPingToken
-Cron: * 0/15 * * * ? *
-Token saved in Cache as Authorization
-Integration Service: SBGMAIBMJAVA.FetchPingToken

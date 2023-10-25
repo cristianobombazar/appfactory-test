@@ -1,2 +1,0 @@
-INSERT INTO `dbxdb`.`alertcontentfields` (`Code`, `Name`, `DefaultValue`, `createdby`) VALUES ('MaskedIdentityNumber', 'Identity Number', '12345', 'konyuser');
-INSERT INTO `dbxdb`.`alertcontentfields` (`Code`, `Name`, `DefaultValue`, `createdby`) VALUES ('MaskedCellphone/Mobile', 'Cellphone/Mobile', '90000087798', 'konyuser');

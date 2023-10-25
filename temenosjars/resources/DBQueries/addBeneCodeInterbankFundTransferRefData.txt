@@ -1,3 +1,0 @@
-alter table dbxdb.interbankfundtransfersRefData add proofOfPayment varchar(1024);
-alter table dbxdb.interbankfundtransfersRefData add beneCode varchar(20);
-Alter table dbxdb.externalaccount add residencyStatus varchar(200);

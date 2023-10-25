@@ -1,1 +1,0 @@
-ALTER TABLE dbxdb.communicationtemplate MODIFY Text longtext;

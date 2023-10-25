@@ -1,9 +1,0 @@
-UPDATE dbxdb.dbxalerttype 
-SET 
-    Status_id = 'SID_INACTIVE'
-WHERE
-    id != 'LOGIN'
-        AND id != 'TRANSFER_RECIPIENT'
-        AND id != 'GENTRANSACTION_APPROVAL_REQUEST'
-        AND id != 'APPROVAL_GENERAL_TRANSACTION_REQUEST'
-        AND id != 'REQUEST_AND_APPROVAL_ALERTS';

@@ -1,2 +1,0 @@
-ALTER TABLE dbxdb.transaction MODIFY payeeName varchar(100);
-ALTER TABLE dbxdb.transaction MODIFY beneficiaryName varchar(100);

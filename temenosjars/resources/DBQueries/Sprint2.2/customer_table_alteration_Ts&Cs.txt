@@ -1,4 +1,0 @@
-ALTER TABLE `dbxdb`.`customer` 
-ADD COLUMN `isEBTCaccepted` VARCHAR(5) NULL DEFAULT 'false' AFTER `isEnrolledFromSpotlight`;
-ALTER TABLE `dbxdb`.`customer` 
-ADD COLUMN `isEBTCacknowledged` VARCHAR(5) NULL DEFAULT 'false' AFTER `isEBTCaccepted`;

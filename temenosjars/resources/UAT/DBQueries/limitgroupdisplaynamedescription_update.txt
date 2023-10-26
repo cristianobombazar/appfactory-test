@@ -1,0 +1,1 @@
+update dbxdb.limitgroupdisplaynamedescription set softdeleteflag=1 where limitGroupId="BULK_PAYMENT"

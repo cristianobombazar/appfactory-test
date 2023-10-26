@@ -1,0 +1,30 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `rolepermission_view` AS
+    SELECT 
+        `role`.`Name` AS `Role_Name`,
+        `role`.`Description` AS `Role_Description`,
+        `role`.`Status_id` AS `Role_Status_id`,
+        `rolepermission`.`Role_id` AS `Role_id`,
+        `permission`.`id` AS `Permission_id`,
+        `permission`.`Type_id` AS `Permission_Type_id`,
+        `permission`.`Status_id` AS `Permission_Status_id`,
+        `permission`.`DataType_id` AS `DataType_id`,
+        `permission`.`Name` AS `Permission_Name`,
+        `permission`.`Description` AS `Permission_Description`,
+        `permission`.`isComposite` AS `Permission_isComposite`,
+        `permission`.`PermissionValue` AS `PermissionValue`,
+        `permission`.`createdby` AS `Permission_createdby`,
+        `permission`.`modifiedby` AS `Permission_modifiedby`,
+        `permission`.`createdts` AS `Permission_createdts`,
+        `permission`.`lastmodifiedts` AS `Permission_lastmodifiedts`,
+        `permission`.`synctimestamp` AS `Permission_synctimestamp`,
+        `permission`.`softdeleteflag` AS `Permission_softdeleteflag`
+    FROM
+        ((`rolepermission`
+        JOIN `permission` ON ((`rolepermission`.`Permission_id` = `permission`.`id`)))
+        JOIN `role` ON ((`role`.`id` = `rolepermission`.`Role_id`)))
+    WHERE
+        (`permission`.`softdeleteflag` <> 1)

@@ -1,0 +1,22 @@
+{
+  "title": "Meta",
+  "$ref": "#/definitions/Meta",
+  "definitions": {
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "DealerType": {
+          "type": "string"
+        },
+        "LUClient": {
+          "type": "string",
+          "description": ""
+        },
+        "readOnly": {
+          "type": "boolean",
+          "description": "Boolean flag used to set the BOP form to display as a read-only interface.  Javascript uses truthy evaluation and the supplied value must thus be a non-string value of [true|false]."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+CREATE TABLE `ownaccounttransfersRefData` (
+  `referenceId` bigint(20) NOT NULL,
+  `purposecode` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `statementrefno` varchar(48) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `benerefeno` varchar(140) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `compliancecode` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `rfqDetails` varchar(1024) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `submitPaymentId` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `submitPaymentResponse` varchar(1024) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `bopDetails` mediumtext COLLATE utf8_unicode_ci,
+  `beneficiaryState` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `confirmationNumber` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `clearingCode` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `beneficiaryAddressLine2` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `paymentType` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`referenceId`),
+  CONSTRAINT `ownaccounttransfersRefData_ibfk_1` FOREIGN KEY (`referenceId`) REFERENCES `ownaccounttransfers` (`transactionId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

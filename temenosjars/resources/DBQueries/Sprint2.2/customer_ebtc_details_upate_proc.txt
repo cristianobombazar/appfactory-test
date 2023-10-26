@@ -1,0 +1,59 @@
+CREATE DEFINER=`readwrite`@`%` PROCEDURE `customer_ebtc_details_upate_proc`(
+IN _customerId VARCHAR(50),
+IN _emailId VARCHAR(128),
+IN _isEBTCaccepted VARCHAR(5),
+IN _isEBTCacknowledged VARCHAR(5),
+IN _isDesignedPerson VARCHAR(5),
+OUT outputValue LONGTEXT
+)
+BEGIN
+
+DECLARE isDelegatedPerson VARCHAR(1);
+DECLARE coreCustomerId VARCHAR(50);
+DECLARE customerId VARCHAR(50);
+DECLARE isEBTCacceptedDb VARCHAR(5);
+DECLARE customerIdStringList LONGTEXT DEFAULT '';
+DECLARE finished VARCHAR(255) DEFAULT 0;
+DECLARE cursor_customerIdList CURSOR FOR SELECT cc.customerId FROM dbxdb.contractcorecustomers ccc,dbxdb.contractcustomers cc,dbxdb.customer c  
+    WHERE cc.contractId=ccc.contractId COLLATE utf8_general_ci 
+    AND ccc.coreCustomerId=(SELECT cc.coreCustomerId FROM dbxdb.contractcustomers cc where cc.customerId = c.id) AND c.UserName=_emailId COLLATE utf8_general_ci;
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+    
+IF (_isDesignedPerson IS NOT NULL AND _isDesignedPerson != '' AND _isDesignedPerson ='true') THEN
+	
+    UPDATE dbxdb.customer c SET c.isEBTCaccepted=_isEBTCaccepted,c.isEBTCacknowledged=_isEBTCacknowledged WHERE c.UserName=_emailId COLLATE utf8_general_ci;
+	
+    OPEN cursor_customerIdList;
+    customerIdListLoop: LOOP
+		
+		FETCH cursor_customerIdList INTO customerId;
+        
+        IF finished = 1 THEN 
+			LEAVE customerIdListLoop;
+		END IF;
+		
+        IF customerId IS NULL THEN
+			LEAVE customerIdListLoop;
+            
+		ELSE
+			UPDATE dbxdb.customer c SET c.isEBTCaccepted=_isEBTCaccepted WHERE c.id COLLATE utf8_general_ci =customerId;
+		END IF;
+    
+    END LOOP;
+    
+    SET outputValue = 'Delegated user TCs accept success.';
+    
+ELSE
+	SELECT c.isEBTCaccepted INTO isEBTCacceptedDb FROM dbxdb.customer c  
+    WHERE  c.UserName=_emailId COLLATE utf8_general_ci;
+    
+    IF (isEBTCacceptedDb ='true') THEN
+		UPDATE dbxdb.customer c SET c.isEBTCacknowledged=_isEBTCaccepted WHERE c.UserName =_emailId COLLATE utf8_general_ci;
+        SET outputValue = 'Regular user TCs acknowledg success.';
+    ELSE
+		SET outputValue = 'Regular user TCs acknowledg denided. A';
+    END IF;
+    
+end if;
+
+END

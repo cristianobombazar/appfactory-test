@@ -1,0 +1,5 @@
+
+/*Adding a new column to save beneficiary state or status (new, existing, once)*/
+alter table dbxdb.internationalfundtransfersRefData add beneficiaryCategory varchar(20);
+
+alter table dbxdb.internationalfundtransfersRefData add beneCode varchar(20);

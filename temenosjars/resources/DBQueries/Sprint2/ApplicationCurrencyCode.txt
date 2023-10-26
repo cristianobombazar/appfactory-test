@@ -1,0 +1,4 @@
+UPDATE `dbxdb`.`application` SET `currencyCode` = 'ZAR' WHERE (`id` = '2');
+UPDATE `dbxdb`.`application` SET `currenciesSupported` = '{\"currency1\": \"USD\", \"currency2\": \"GBP\", \"currency3\": \"EUR\", \"currency4\": \"ZAR\"}' WHERE (`id` = '2');
+SET SQL_SAFE_UPDATES = 0;
+update dbxdb.application set isSelfApprovalEnabled = 0;

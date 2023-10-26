@@ -1,0 +1,42 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `dbxdb`.`roles_view` AS
+    SELECT 
+        `dbxdb`.`role`.`id` AS `role_id`,
+        `dbxdb`.`role`.`Type_id` AS `roleType_id`,
+        `dbxdb`.`role`.`Name` AS `role_Name`,
+        `dbxdb`.`role`.`Description` AS `role_Desc`,
+        `dbxdb`.`role`.`Status_id` AS `Status_id`,
+        `dbxdb`.`status`.`Description` AS `Status_Desc`,
+        (SELECT 
+                COUNT(`dbxdb`.`rolepermission`.`Role_id`)
+            FROM
+                `dbxdb`.`rolepermission`
+            WHERE
+                (`dbxdb`.`rolepermission`.`Role_id` = `dbxdb`.`role`.`id`)) AS `permission_Count`,
+        (SELECT 
+                COUNT(`dbxdb`.`userrole`.`User_id`)
+            FROM
+                `dbxdb`.`userrole`
+            WHERE
+                `dbxdb`.`userrole`.`Role_id` IN (SELECT 
+                        `dbxdb`.`rolepermission`.`Role_id`
+                    FROM
+                        `dbxdb`.`rolepermission`
+                    WHERE
+                        (`dbxdb`.`rolepermission`.`Role_id` = `dbxdb`.`role`.`id`))) AS `Users_Count`,
+        (CASE `dbxdb`.`role`.`Status_id`
+            WHEN 'SID_ACTIVE' THEN 'Active'
+            ELSE 'Inactive'
+        END) AS `Status`
+    FROM
+        (`dbxdb`.`role`
+        JOIN `dbxdb`.`status` ON ((`dbxdb`.`role`.`Status_id` = `dbxdb`.`status`.`id`))) 
+		where dbxdb.role.softdeleteflag <> 1
+		
+		
+		
+		
+		

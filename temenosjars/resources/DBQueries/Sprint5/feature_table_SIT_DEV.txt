@@ -1,0 +1,1 @@
+update dbxdb.feature set softdeleteflag = 1 where id = "MESSAGES"

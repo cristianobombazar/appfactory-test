@@ -1,0 +1,45 @@
+{
+  "sbZABOLP":{
+    "evaluator":{
+      "#ttlDescription":"Time To Live for the Evaluator Instance (Minutes) - Instances recreated once TTL lapses.",
+      "ttl":  20,
+
+      "#minInstancesDescription":"Minimum number of available Evaluator Instances to keep in memory",
+      "minInstances": 3,
+
+      "#maxInstancesDescription":"Maximum number of available Evaluator Instances to keep in memory",
+      "maxInstances": 20
+    },
+
+    "validator":{
+      "#ttlDescription":"Time To Live for the Validator Instance (Minutes) - Instances recreated once TTL lapses.",
+      "ttl":  20,
+
+      "#minInstancesDescription":"Minimum number of available Validator Instances to keep in memory",
+      "minInstances": 3,
+
+      "#maxInstancesDescription":"Maximum number of available Validator Instances to keep in memory",
+      "maxInstances": 20
+    },
+
+    "artefacts":{
+      "#evaluationDescription": "(String) evaluation.js contents",
+      "evaluation": "[**LOAD FILE CONTENTS HERE**]",
+
+      "#validationDescription": "(String) validation.js contents",
+      "validation": "[**LOAD FILE CONTENTS HERE**]",
+
+      "#documentDescription": "(String) document.js contents",
+      "document": "[**LOAD FILE CONTENTS HERE**]",
+
+      "#externalValidationDescription": "(String) externalValidation.js contents",
+      "externalValidation": "[**LOAD FILE CONTENTS HERE**]",
+
+      "#lookupsDescription": "(String) lookups.js contents",
+      "lookups": "[**LOAD FILE CONTENTS HERE**]",
+
+      "#formDescription": "(String) form.js contents",
+      "form": "[**LOAD FILE CONTENTS HERE**]"
+    }
+  }
+}

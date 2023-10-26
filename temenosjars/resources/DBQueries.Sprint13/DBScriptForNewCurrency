@@ -1,0 +1,19 @@
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('BWP', 'currency of Botswana', 'P');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('ZMW', '-', '-');
+
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('XOF', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('UGX', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('TZS', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('SZL', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('SCR', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('RWF', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('MZN', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('NAD', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('NGN', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('KES', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('LSL', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('MGA', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('MUR', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('MWK', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('GHS', '-', '-');
+INSERT INTO `dbxdb`.`currency` (`code`, `name`, `symbol`) VALUES ('CZK', '-', '-');

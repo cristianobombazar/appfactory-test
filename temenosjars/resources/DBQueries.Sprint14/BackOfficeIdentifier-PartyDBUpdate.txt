@@ -1,0 +1,51 @@
+UAT:
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232234648' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232226361' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238591' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229811' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238516' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229818' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229813' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232232151' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229730' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238601' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229810' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238589' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229820' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229814' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232226279' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238595' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229806' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229821' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238597' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229808' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229824' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2232238584' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229823' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229816' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229189' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229185' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229191' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150826' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150838' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150836' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150841' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150831' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229195' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229183' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150829' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229187' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229193' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229229181' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150843' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150810' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150833' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229150591' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229142664' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229138951' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229136224' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229136295' and "businessKey" = 'Other System Reference';
+UPDATE "<UAT.GUID>.mspa.ms_party_alternateidentity" SET "identityType" = 'BackOfficeIdentifier' WHERE "partyId" = '2229142667' and "businessKey" = 'Other System Reference';
+
+PROD:
+-- to be added for prod

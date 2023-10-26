@@ -1,0 +1,10 @@
+{
+  "Name": ${TPFirstName},
+  "Surname": ${TPSurname},
+  "Gender": ${TPGender},
+  "IDNumber": ${TPIdNumber},
+  "DateOfBirth": ${TPDateOfBirth},
+  "PassportCountry": ${TPPassportCountry},
+  "PassportNumber": ${TPPassportNumber},
+  "TempResPermitNumber": ${TPTempResPermitNumber}
+}

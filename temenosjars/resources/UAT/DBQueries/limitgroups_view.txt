@@ -1,0 +1,17 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `dbxdb`.`limitgroups_view` AS
+    SELECT 
+        `dbxdb`.`limitgroup`.`id` AS `id`,
+        `dbxdb`.`limitgroup`.`name` AS `name`,
+        `dbxdb`.`limitgroup`.`description` AS `description`,
+        `dbxdb`.`limitgroupdisplaynamedescription`.`localeId` AS `localeId`,
+        `dbxdb`.`limitgroupdisplaynamedescription`.`displayName` AS `displayName`,
+        `dbxdb`.`limitgroupdisplaynamedescription`.`displayDescription` AS `displayDescription`
+    FROM
+        (`dbxdb`.`limitgroup`
+        LEFT JOIN `dbxdb`.`limitgroupdisplaynamedescription` ON ((`dbxdb`.`limitgroupdisplaynamedescription`.`limitGroupId` = `dbxdb`.`limitgroup`.`id`)))
+    WHERE
+        (`dbxdb`.`limitgroupdisplaynamedescription`.`softdeleteflag` <> 1)

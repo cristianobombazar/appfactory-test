@@ -1,0 +1,11 @@
+-- Table to store the Reference Data API response for caching
+-- This functionality is for sbg-625
+
+CREATE TABLE dbxdb.SbgRefDataCache (
+  `ctrycurr` varchar(32) NOT NULL,
+  `refdata` varchar(8192) NOT NULL,
+  `updateAtInMillis` varchar(32) NOT NULL,
+  `recordedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ctrycurr`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

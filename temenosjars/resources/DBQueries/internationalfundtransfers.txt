@@ -1,0 +1,2 @@
+ALTER TABLE dbxdb.internationalfundtransfers MODIFY payeeName varchar(100);
+ALTER TABLE dbxdb.internationalfundtransfers MODIFY beneficiaryName varchar(100);

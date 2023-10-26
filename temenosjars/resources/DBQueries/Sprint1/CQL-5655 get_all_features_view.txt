@@ -1,0 +1,38 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `readwrite`@`%` 
+    SQL SECURITY DEFINER
+VIEW `dbxdb`.`get_all_features_view` AS
+    SELECT 
+        `dbxdb`.`feature`.`id` AS `id`,
+        `dbxdb`.`feature`.`name` AS `name`,
+        `dbxdb`.`feature`.`description` AS `description`,
+        `dbxdb`.`feature`.`Type_id` AS `Type_id`,
+        `dbxdb`.`feature`.`Service_Fee` AS `Service_Fee`,
+        `dbxdb`.`feature`.`Status_id` AS `Status_id`,
+        `dbxdb`.`featureroletype`.`RoleType_id` AS `roleTypeId`,
+        `dbxdb`.`featuredisplaynamedescription`.`Locale_id` AS `languageId`,
+        `dbxdb`.`featuredisplaynamedescription`.`displayName` AS `displayName`,
+        `dbxdb`.`featuredisplaynamedescription`.`displayDescription` AS `displayDescription`,
+        `dbxdb`.`membergrouptype`.`description` AS `roleTypeName`,
+        (SELECT 
+                COUNT(DISTINCT `dbxdb`.`featureaction`.`id`)
+            FROM
+                `dbxdb`.`featureaction`
+            WHERE
+                ((`dbxdb`.`feature`.`id` = `dbxdb`.`featureaction`.`Feature_id`)
+                    AND (`dbxdb`.`featureaction`.`Type_id` = 'MONETARY'))) AS `monetaryActions`,
+        (SELECT 
+                COUNT(DISTINCT `dbxdb`.`featureaction`.`id`)
+            FROM
+                `dbxdb`.`featureaction`
+            WHERE
+                ((`dbxdb`.`feature`.`id` = `dbxdb`.`featureaction`.`Feature_id`)
+                    AND (`dbxdb`.`featureaction`.`Type_id` = 'NON_MONETARY'))) AS `nonMonetaryActions`
+    FROM
+        (((`dbxdb`.`feature`
+        LEFT JOIN `dbxdb`.`featureroletype` ON ((`dbxdb`.`featureroletype`.`Feature_id` = `dbxdb`.`feature`.`id`)))
+        LEFT JOIN `dbxdb`.`featuredisplaynamedescription` ON ((`dbxdb`.`featuredisplaynamedescription`.`Feature_id` = `dbxdb`.`feature`.`id`)))
+        LEFT JOIN `dbxdb`.`membergrouptype` ON ((`dbxdb`.`featureroletype`.`RoleType_id` = `dbxdb`.`membergrouptype`.`id`)))
+    WHERE
+        (`dbxdb`.`feature`.`softdeleteflag` <> '1')  AND   (`dbxdb`.`featureroletype`.`softdeleteflag` <> '1') 
